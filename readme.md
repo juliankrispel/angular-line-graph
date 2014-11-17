@@ -2,4 +2,6 @@
 
 ### Useage
 
-<line-graph ></line-graph>
+```html
+<line-graph data="graphData" width="300" height="200" color="red"></line-graph>
+```
