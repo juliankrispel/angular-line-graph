@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="demo">
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body ng-controller="ctrl">
+<chart width="600" height="300">
+    <line-graph data="graphData" width="600" height="300" color="red"></line=graph>
+</chart>
+<script src="../bower_components/lodash/dist/lodash.js"></script>
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-chart/dist/angular-chart.js"></script>
+<script src="../bower_components/vis-util/dist/vis-util.angular.js"></script>
+<script src="../dist/angular-line-graph.js"></script>
+<script>
+(function(){
+angular.module('demo', ['plot'])
+    .controller('ctrl', function($scope){
+        $scope.graphData = [
+            {x: 1, y: 62},
+            {x: 2, y: 33},
+            {x: 3, y: 60},
+            {x: 4, y: 13},
+            {x: 5, y: 12},
+            {x: 6, y: 23},
+            {x: 7, y: 62},
+            {x: 8, y: 73}
+        ];
+    });
+})();
+</script>
+</body>
+</html>
